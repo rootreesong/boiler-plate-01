@@ -24,6 +24,8 @@ mongoose.connect(config.mongoURI, {
 app.get('/', (req, res) => res.send('Hello World!~안녕하세요.') )
 
 
+
+// regist route
 app.post('/register', (req, res) => {
     
     // 회원가입할때 필요한 정보들을 Client에서 가져오면 된다. 그것을 DB에 넣어 준다. 
