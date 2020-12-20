@@ -1,0 +1,17 @@
+윈도우 visual code 터미널에서 github에 파일 올리는 방법
+
+1) 사이트에서 git 윈도우 버젼 다운로드 설치
+2) git --version (설치확인)
+3) git init
+4) git status
+5) git add .
+6) 만약 잘못올린거 있으면(예시 node_modules)
+ git rm --cached node_modules -r
+7) git status (상태확인)
+8) git commit -m "처음 올림(하고싶은메모)"
+9) git remote add origin https://github.com/rootreesong/boiler-plate-01.git 
+  => https 상태로 진행/ 크롬등에서 로그인 정보 확인
+9-1) 올리는 이름(예시:origin) 및 주소가 잘못 됬으면,
+      git remote rm origin 해서 지워줌
+
+10) git push -u origin main
